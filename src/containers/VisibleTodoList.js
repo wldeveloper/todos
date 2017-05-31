@@ -14,6 +14,9 @@ const getVisibleTodos = (todos, filter) => {
 }
 
 const mapStateToProps = (state) => {
+  // test 打印根state查看
+  console.log(state)
+       
   return {
     todos:getVisibleTodos(state.todos, state.visibilityFilter)
   }
